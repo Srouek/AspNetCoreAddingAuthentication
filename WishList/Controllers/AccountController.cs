@@ -44,7 +44,6 @@ namespace WishList.Controllers
                 }
                 return View("Register",registerViewModel);
             }
-            
             return RedirectToAction("Index","Home");
         }
 
