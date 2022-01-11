@@ -66,7 +66,7 @@ namespace WishList.Controllers
                 ModelState.AddModelError(string.Empty, "Invalid login attempt.");
                 return View(loginViewModel);
             }
-            return RedirectToAction("Index", "Home");
+            return RedirectToAction("Index", "Item");
         }
 
         [HttpPost, ValidateAntiForgeryToken]
